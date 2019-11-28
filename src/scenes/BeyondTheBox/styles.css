@@ -1,0 +1,76 @@
+.beyond-the-box {
+  width: 100%;
+  overflow: hidden;
+}
+
+.beyond-the-box .pane-container {
+  position: relative;
+  height: 100vh;
+  z-index: 1;
+  display: flex;
+}
+
+.beyond-the-box .pane-container .pane-background {
+  position: absolute;
+
+  top: -50px;
+  left: 0;
+  bottom: -50px;
+  right: 0;
+}
+
+.beyond-the-box .pane-container .pane-background .mask-box {
+  position: absolute;
+
+  top: 50px;
+  left: -50px;
+  bottom: 50px;
+  right: -50px;
+  overflow: hidden;
+
+  border-bottom: 10px solid yellow;
+  transform: rotate(-2deg);
+}
+
+.beyond-the-box .pane-container .pane-background .mask-box .image {
+  position: absolute;
+
+  top: -50px;
+  left: 0;
+  bottom: -50px;
+  right: 0;
+
+  transform: rotate(2deg);
+}
+
+.beyond-the-box .pane-container .pane-text {
+  position: relative;
+  font-size: 30px;
+  color: white;
+
+  flex: 1;
+  align-self: center;
+  /* text-align: center; */
+}
+
+.beyond-the-box .pane-container.-one {
+  margin-top: 50px;
+}
+
+/* .beyond-the-box .pane-container.-two {
+  z-index: 2;
+} */
+
+.beyond-the-box .pane-container.-one .pane-background .image {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1125145/juskteez-vu-3824%20(1).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.beyond-the-box .pane-container.-two .pane-background .image {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1125145/test2-min.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
